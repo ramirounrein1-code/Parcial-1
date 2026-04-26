@@ -1,0 +1,247 @@
+/* saca todos los espacios automáticos del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1A2746;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #1A2746;
+    padding: 20px 8%;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: white;
+    font-size: 14px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* SECCION PROYECTOS */
+.proyectos {
+    padding: 40px 8%;
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+/* TITULO */
+.titulo-proyectos {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11vh;
+    line-height: 0.9;
+    letter-spacing: 2px;
+}
+
+/* DESCRIPCION */
+.descripcion-proyectos {
+    margin-top: 12px;
+    color: #cfd6e4;
+    font-size: 18px;
+    max-width: 640px;
+}
+
+/* ENCABEZADO */
+.encabezado-proyectos {
+    margin-bottom: 40px;
+}
+
+/* TARJETA */
+.tarjeta-proyecto {
+    background-color: #7674EB;
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 30px;
+}
+
+/* BARRA SUPERIOR */
+.barra-superior {
+    background-color: #5d5ad8;
+    border-radius: 8px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nombre-proyecto {
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.año-proyecto {
+    font-size: 34px;
+}
+
+/* CONTENIDO */
+.contenido-proyecto {
+    display: flex;
+    gap: 22px;
+    margin-top: 18px;
+}
+
+.media-proyecto {
+    width: 72%;
+}
+
+/* IMG */
+
+.media-proyecto img {
+    width: 100%;
+    height: clamp(490px, 20.5vw, 420px);
+    object-fit: cover;
+    /* Llene todo el espacio del contenedor */
+    border-radius: 10px;
+    display: block;
+}
+
+.texto-proyecto {
+    width: 28%;
+    font-size: 16px;
+    line-height: 1.7;
+    color: white;
+}
+
+/* BARRA INFERIOR */
+.barra-inferior {
+    margin-top: 11px;
+    padding-top: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.categorias-proyecto {
+    font-size: 14px;
+    color: white;
+}
+
+.boton-proyecto {
+    display: inline-block;
+    padding: 12px 22px;
+    background-color: #5d5ad8;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.boton-proyecto:hover {
+    color: #000000;
+}
+
+/* PROYECTO 2 Y 4*/
+
+.contenido-proyecto2 {
+    display: flex;
+    gap: 22px;
+    margin-top: 18px;
+    flex-direction: row-reverse;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    body {
+        overflow: auto;
+        height: auto;
+    }
+
+    /* TITULO */
+    .titulo-proyectos {
+        font-size: clamp(60px, 15vw, 90px);
+        line-height: 0.9;
+        text-align: center;
+    }
+
+    /* DESCRIPCION */
+    .descripcion-proyectos {
+        font-size: 15px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    /* ENCABEZADO */
+    .encabezado-proyectos {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .nombre-proyecto {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .año-proyecto {
+        font-size: 12px;
+    }
+
+    /* CONTENIDO */
+    .contenido-proyecto,.contenido-proyecto2 {
+        flex-direction: column;
+          gap: 8px;
+    }
+
+    .media-proyecto {
+        width: 100%;
+    }
+
+    .media-proyecto img {
+        height: 220px;
+        margin-bottom: 0;
+    }
+
+    .texto-proyecto {
+        width: 100%;
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: justify;
+        margin-top: 4;
+    }
+
+    /* BARRA INFERIOR */
+    .barra-inferior {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .categorias-proyecto {
+        font-size: 11.5px;
+    }
+
+    .boton-proyecto {
+        font-size: 13px;
+        margin: 0 auto;
+    }
+
+     .boton-proyecto:hover {
+        color: #ffffff;
+        transform: none;
+        box-shadow: none;
+    }
+}

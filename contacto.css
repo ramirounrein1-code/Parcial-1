@@ -1,0 +1,215 @@
+/* saca todos los espacios automáticos del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-color: #1A2746;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #1A2746;
+    padding: 20px 8%;
+}
+
+/* Texto izquierda */
+.navbar-brand {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Texto derecha */
+.nav-link {
+    color: white;
+    font-size: 14px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* Menu hamburguesa */
+.navbar-toggler {
+    border: none;
+}
+
+/* Invierte color de menu hamburguesa, al ser una imagen es la unica forma de cambiarlo */
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* SECCION PORTADA */
+.portada {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 10% 8%;
+    height: calc(80vh - 70px);
+    gap: 4%;
+}
+
+/* ARTICLE */
+.texto {
+    width: 45%;
+    padding-top: 2%;
+}
+
+/* TITULO */
+.texto h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(60px, 10vw, 145px);
+    line-height: 0.9;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+/* PARRAFO */
+.texto p {
+    margin: 12px 0 16px 0;
+    color: #cfd6e4;
+    font-size: clamp(14px, 1.5vw, 16px);
+    max-width: 550px;
+}
+
+/* MAIL */
+.texto p a {
+    color: #7674EB;
+    text-decoration: underline;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+    font-size: clamp(14px, 1.5vw, 16px);
+    display: inline;
+}
+
+/* FORMULARIO CONTACTO */
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 50%;
+    padding-top: 2%;
+}
+
+.campo {
+    background-color: transparent;
+    border: 1.5px solid rgba(255, 255, 255, 0.35);
+    border-radius: 6px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    color: white;
+    padding: 14px 18px;
+    outline: none;
+}
+
+.campo::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.campo:focus {
+    background-color: transparent;
+    border-color: #7674EB;
+    box-shadow: none;
+    color: white;
+}
+
+.mensaje {
+    height: 220px;
+    resize: none;
+}
+
+/* BOTON */
+.btn.btn-primary {
+    width: 60%;
+    align-self: center;
+    padding: 14px;
+    background-color: #7674EB;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background-color 0.2s;
+}
+
+.btn.btn-primary:hover {
+    background-color: #5a58d4;
+}
+
+/* MODAL CONTACTO */
+.modal-title.fs-5 {
+    color: #000000;
+}
+
+.btn.btn-primary-enviar {
+    background-color: #7674EB;
+    color: white;
+}
+
+.btn.btn-primary-enviar:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+    body {
+        overflow: auto;
+        height: auto;
+    }
+
+    .portada {
+        flex-direction: column;
+        text-align: center;
+        padding: 10% 8%;
+        height: auto;
+        gap: 30px;
+    }
+
+    .texto {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .texto h1 {
+        font-size: 70px;
+        line-height: 0.9;
+    }
+
+    .texto p {
+        max-width: 100%;
+    }
+
+    .formulario-contacto {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .btn.btn-primary {
+        width: 100%;
+        align-self: auto;
+    }
+
+    .texto a {
+        display: block;
+        margin: 10px auto;
+    }
+
+    .modal-dialog.modal-sm {
+        max-width: 50px;
+    }
+}

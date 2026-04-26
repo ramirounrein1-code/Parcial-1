@@ -1,0 +1,186 @@
+/* saca todos los espacios automáticos del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    overflow-y: scroll;
+}
+
+
+body {
+    background-color: #1A2746;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+}
+
+
+/* NAVBAR */
+.navbar {
+    background-color: #1A2746;
+    padding: 20px 8%;
+}
+
+
+/* Texto izquierda */
+.navbar-brand {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+
+/* Texto derecha */
+.nav-link {
+    color: white;
+    font-size: 14px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+
+/* Menu hamburguesa */
+.navbar-toggler {
+    border: none;
+}
+
+
+/* Invierte color de menu hamburguesa, al ser una imagen es la unica forma de cambiarlo */
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+/* SECCION PORTADA */
+.portada {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 8%;
+    height: calc(92vh - 70px);
+    gap: 4%;
+    position: relative;
+}
+
+
+/* ARTICLE */
+.texto {
+    width: 50%;
+    position: relative;
+
+}
+
+
+/* TITULO */
+.texto h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: clamp(60px, 10vw, 145px);
+    line-height: 0.9;
+    letter-spacing: 2px;
+}
+
+
+/* PARRAFO */
+.texto p {
+    margin: 12px 0 25px 0;
+    color: #cfd6e4;
+    font-size: clamp(14px, 1.5vw, 18px);
+    max-width: 90%;
+}
+
+
+/* BOTON */
+.texto a {
+    display: inline-block;
+    margin-right: 12px;
+    padding: 14px 26px;
+    background-color: #7674EB;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: clamp(13px, 1.2vw, 15px);
+}
+
+.texto a:hover {
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+/* CONTROL CONTONEDOR
+clamp(mínimo, preferido, máximo)*/
+.imagen {
+    width: clamp(260px, 40vw, 600px);
+    height: clamp(300px, 60vw, 700px);
+}
+
+/* CONTROL IMGAGEN */
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+
+    body {
+        overflow: auto;
+        height: auto;
+    }
+
+
+    .portada {
+        flex-direction: column;
+        text-align: center;
+        padding: 10% 8%;
+        height: auto;
+        gap: 30px;
+    }
+
+
+    .texto {
+        width: 100%;
+    }
+
+
+    .texto h1 {
+        font-size: clamp(60px, 15vw, 90px);
+        line-height: 0.9;
+    }
+
+
+    .texto p {
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+
+    .imagen {
+
+        width: 90%;
+        height: 400px;
+        max-width: 400px;
+        border-radius: 14px;
+        top: auto;
+        right: auto;
+    }
+
+
+    .imagen img {
+        border-radius: 14px;
+        object-position: top;
+    }
+
+
+    .texto a {
+        display: block;
+        margin: 10px auto;
+    }
+}
