@@ -54,7 +54,7 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     padding: 10% 8%;
-    height: calc(80vh - 70px);
+    height: calc(80vh - 70px); /* sirve para hacer cuentas dentro del CSS. */
     gap: 4%;
 }
 
@@ -91,6 +91,36 @@ body {
     margin: 0;
     font-size: clamp(14px, 1.5vw, 16px);
     display: inline;
+}
+
+/* REDES */
+.redes {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    list-style: none; /* Define cómo se ven las listas (<ul> y <ol>) */
+    padding: 0;
+}
+
+.redes li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: #7674EB;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.redes li a:hover {
+    background-color: #5a58d4;
+    }
+
+.redes li a img {
+    width: 28px;
+    height: 28px;
 }
 
 /* FORMULARIO CONTACTO */
@@ -150,6 +180,13 @@ body {
     background-color: #5a58d4;
 }
 
+/* CENTRAR MODAL */
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+}
+
 /* MODAL CONTACTO */
 .modal-title.fs-5 {
     color: #000000;
@@ -162,6 +199,84 @@ body {
 
 .btn.btn-primary-enviar:hover {
     color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* RESPONSIVE NOTEBOOK 1366x768 */
+
+
+/* NOTEBOOK 1366x768 */
+/* deja navbar original */
+
+@media (min-width: 769px) and (max-width: 1366px) and (max-height: 768px) {
+
+    body {
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .navbar {
+        padding: 20px 8%;
+    }
+
+    .portada {
+        padding: 4% 8%;
+        height: calc(95vh - 70px);
+        gap: 3%;
+        align-items: center;
+    }
+
+    .texto {
+        width: 46%;
+        padding-top: 0;
+    }
+
+    .texto h1 {
+        font-size: 105px;
+        margin-bottom: 10px;
+    }
+
+    .texto p {
+        font-size: 14px;
+        margin: 8px 0 12px 0;
+        max-width: 500px;
+    }
+
+    .redes {
+        margin-top: 18px;
+        gap: 12px;
+    }
+
+    .redes li a {
+        width: 52px;
+        height: 52px;
+    }
+
+    .redes li a img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .formulario-contacto {
+        width: 48%;
+        gap: 10px;
+        padding-top: 0;
+    }
+
+    .campo {
+        padding: 12px 16px;
+        font-size: 13px;
+    }
+
+    .mensaje {
+        height: 150px;
+    }
+
+    .btn.btn-primary {
+        width: 75%;
+        padding: 12px;
+        font-size: 13px;
+    }
 }
 
 /* RESPONSIVE */
@@ -197,6 +312,21 @@ body {
     .formulario-contacto {
         width: 100%;
         padding-top: 0;
+    }
+
+    .redes {
+        justify-content: center; /* centra los botones */
+        gap: 12px;
+    }
+
+    .redes li a {
+        width: 50px;
+        height: 50px;
+    }
+
+    .redes li a img {
+        width: 24px;
+        height: 24px;
     }
 
     .btn.btn-primary {
