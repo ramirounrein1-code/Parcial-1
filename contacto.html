@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="contacto.css">
 </head>
 
-<body>
+<body id="body-contacto">
 
     <!-- HEADER -->
     <header>
@@ -93,7 +93,8 @@
                 <textarea class="form-control campo mensaje" placeholder="Comentario"></textarea>
 
                 <!-- Boton enviar Bootstrap -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                 
+                <button type="button" class="btn btn-primary" onclick="paddingFix()" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Enviar
                 </button>
 
@@ -126,7 +127,12 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script defer>
+        function paddingFix(){
+            let body = document.getElementById("body-contacto");
+            body.style.paddingRight = "0px";
+        }
+    </script>
 
 </body>
 

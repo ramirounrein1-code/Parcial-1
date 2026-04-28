@@ -30,6 +30,11 @@ body {
     text-decoration: none;
 }
 
+.navbar-brand:hover {
+    color: #5d5ad8; 
+    transition: color 0.3s ease;
+}
+
 /* Texto derecha */
 .nav-link {
     color: white;
@@ -37,6 +42,12 @@ body {
     margin-left: 20px;
     text-decoration: none;
 }
+
+.nav-link:hover {
+    color: #5d5ad8; 
+    transition: color 0.3s ease;
+}
+
 
 /* Menu hamburguesa */
 .navbar-toggler {
@@ -125,7 +136,7 @@ body {
     display: inline-block;
     margin-right: 12px;
     padding: 14px 26px;
-    background-color: #7674EB;
+    background-color: #5d5ad8;
     color: white;
     text-decoration: none;
     border-radius: 30px;

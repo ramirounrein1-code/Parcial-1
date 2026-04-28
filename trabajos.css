@@ -24,12 +24,24 @@ body {
     text-decoration: none;
 }
 
+.navbar-brand:hover {
+    color: #5d5ad8; 
+    transition: color 0.3s ease;
+}
+
+/* Texto derecha */
 .nav-link {
     color: white;
     font-size: 14px;
     margin-left: 20px;
     text-decoration: none;
 }
+
+.nav-link:hover {
+    color: #5d5ad8; 
+    transition: color 0.3s ease;
+}
+
 
 .navbar-toggler {
     border: none;
@@ -163,6 +175,7 @@ body {
     flex-direction: row-reverse;
 }
 
+
 /* RESPONSIVE NOTEBOOK 1366x768 */
 
 @media (min-width: 769px) and (max-width: 1366px) and (max-height: 768px) {
@@ -253,19 +266,23 @@ body {
         font-size: 12px;
     }
 
-    .modal-dialog.modal-xl{
+    .modal-dialog.modal-xl {
         max-width: 900px;
     }
 
-    .carousel-item img{
-        max-height: 500px;
-        width: 100%;
+    .carousel-item img {
+        width: auto;
+        max-width: 100%;
+        height: 450px;
+        object-fit: contain;
+        margin: auto;
+        display: block;
     }
 
-    .modal-body iframe{
-        height: 500px;
+    .modal-body iframe {
+        height: 450px;
     }
-    
+
 }
 
 
@@ -307,9 +324,10 @@ body {
     }
 
     /* CONTENIDO */
-    .contenido-proyecto,.contenido-proyecto2 {
+    .contenido-proyecto,
+    .contenido-proyecto2 {
         flex-direction: column;
-          gap: 8px;
+        gap: 8px;
     }
 
     .media-proyecto {
@@ -345,21 +363,22 @@ body {
         margin: 0 auto;
     }
 
-     .boton-proyecto:hover {
+    .boton-proyecto:hover {
         color: #ffffff;
         transform: none;
         box-shadow: none;
     }
-     .modal-dialog.modal-xl{
+
+    .modal-dialog.modal-xl {
         max-width: 95%;
         margin: auto;
     }
 
-    .carousel-item img{
-        max-height: 260px;
+    .carousel-item img {
+        max-height: 100%;
     }
 
-    .modal-body iframe{
-        height: 260px;
+    .modal-body iframe {
+        height: 300px;
     }
 }

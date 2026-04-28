@@ -32,6 +32,10 @@ body {
     text-decoration: none;
 }
 
+.navbar-brand:hover {
+    color: #5d5ad8; 
+    transition: color 0.3s ease;
+}
 
 /* Texto derecha */
 .nav-link {
@@ -39,6 +43,11 @@ body {
     font-size: 14px;
     margin-left: 20px;
     text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #5d5ad8; 
+    transition: color 0.3s ease;
 }
 
 
@@ -97,8 +106,8 @@ body {
     display: inline-block;
     margin-right: 12px;
     padding: 14px 26px;
-    background-color: #7674EB;
-    color: white;
+    background-color: #5d5ad8;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     border-radius: 30px;
     font-size: clamp(13px, 1.2vw, 15px);

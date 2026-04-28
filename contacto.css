@@ -30,6 +30,11 @@ body {
     text-decoration: none;
 }
 
+.navbar-brand:hover {
+    color: #5d5ad8; 
+    transition: color 0.3s ease;
+}
+
 /* Texto derecha */
 .nav-link {
     color: white;
@@ -37,6 +42,12 @@ body {
     margin-left: 20px;
     text-decoration: none;
 }
+
+.nav-link:hover {
+    color: #5d5ad8; 
+    transition: color 0.3s ease;
+}
+
 
 /* Menu hamburguesa */
 .navbar-toggler {
@@ -56,6 +67,7 @@ body {
     padding: 10% 8%;
     height: calc(80vh - 70px); /* sirve para hacer cuentas dentro del CSS. */
     gap: 4%;
+    width: 100%;
 }
 
 /* ARTICLE */
@@ -109,13 +121,13 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 12px;
-    background-color: #7674EB;
+    background-color: #5d5ad8;
     text-decoration: none;
     transition: background-color 0.2s ease;
 }
 
 .redes li a:hover {
-    background-color: #5a58d4;
+    background-color: #37367e;
     }
 
 .redes li a img {
@@ -164,7 +176,7 @@ body {
     width: 60%;
     align-self: center;
     padding: 14px;
-    background-color: #7674EB;
+    background-color: #5d5ad8;
     color: white;
     border: none;
     border-radius: 6px;
@@ -177,7 +189,7 @@ body {
 }
 
 .btn.btn-primary:hover {
-    background-color: #5a58d4;
+    background-color: #37367e;
 }
 
 /* CENTRAR MODAL */
