@@ -25,7 +25,7 @@ body {
 }
 
 .navbar-brand:hover {
-    color: #5d5ad8; 
+    color: #5d5ad8;
     transition: color 0.3s ease;
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #5d5ad8; 
+    color: #5d5ad8;
     transition: color 0.3s ease;
 }
 
@@ -278,7 +278,7 @@ body {
         margin: auto;
         display: block;
     }
-
+    
     .modal-body iframe {
         height: 450px;
     }
@@ -379,6 +379,6 @@ body {
     }
 
     .modal-body iframe {
-        height: 300px;
+        height: 310px;
     }
 }
